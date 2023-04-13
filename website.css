@@ -1,0 +1,90 @@
+.navbar {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(to right, goldenrod, maroon);
+  display: flex;
+  height: 4em;
+  /* justify-content: space-between; */
+}
+
+.header {
+  text-align: center;
+}
+/* .nav-item{
+    margin: 1em;
+} */
+
+.header_logo {
+  margin-left: 15em;
+  margin-right: 15em;
+}
+
+.nav-item {
+  margin: 1em;
+  text-align: center;
+}
+
+.nav-item > img {
+  text-align: center;
+  margin-top: -1em;
+}
+
+.header {
+  border: 2px solid rgb(246, 229, 133);
+}
+
+body {
+  background: linear-gradient(to right, goldenrod, maroon);
+}
+
+.left-arrow > img {
+  margin-top: 8em;
+  margin-left: 2em;
+}
+
+.middle_king {
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.cycloge_dog_group {
+  text-align: center;
+  margin-top: 5em;
+}
+
+.content_intro {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  color: azure;
+}
+
+.content > hr {
+  color: #d9d9d9;
+  width: 13em;
+  height: 2px;
+  background-color: #d9d9d9 ;  
+}
+
+
+
+.why_cycloge_content > ul {
+    display: flex;
+}
+
+.why_cycloge_content{
+    /* text-align: center; */
+}
+
+.why_cycloge_content_script{
+    color: azure        ;
+    display: block;
+    margin-left: 5em;
+}
+
+
+.why_cycloge_content_list{
+    /* text-align: center; */
+    margin-left: 6.5em;
+}
