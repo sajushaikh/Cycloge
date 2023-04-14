@@ -1,8 +1,80 @@
-.mobile {
-    position: relative;
-    background-color: var(--color-white);
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-  }
-  
+@font-face {
+  font-family: CircularStd;
+  src: url(assets/fonts/circular-std-font-family/CircularStd-Black.woff);
+}
+
+@font-face {
+  font-family: CircularStd-Italic;
+  src: url(assets/fonts/circular-std-font-family/CircularStd-BlackItalic.woff);
+}
+
+@font-face {
+  font-family: CircularStd-Bold;
+  src: url(assets/fonts/circular-std-font-family/CircularStd-Bold.woff);
+}
+
+@font-face {
+  font-family: CircularStd-Book;
+  src: url(assets/fonts/circular-std-font-family/CircularStd-Book.woff);
+}
+
+@font-face {
+  font-family: CircularStd-Medium;
+  src: url(assets/fonts/circular-std-font-family/CircularStd-Medium.woff);
+}
+
+@font-face {
+  font-family: CircularStd-Medium-Italic;
+  src: url(assets/fonts/circular-std-font-family/CircularStd-MediumItalic.woff);
+}
+
+:root {
+  --Font: CircularStd;
+  --Font-Italic: CircularStd-Italic;
+  --Font-Bold: CircularStd-Bold;
+  --Font-Book: CircularStd-Book;
+  --Font-Medium: CircularStd-Medium;
+  --Font-Medium-Italic: CircularStd-Medium-Italic;
+  --body-background: #1D1D1F;
+  --font-color: #F1F1F1;
+  --border: rgba(217, 217, 217, 1);
+  --header-border: rgba(255, 255, 255, 0.2)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--Font) !important;
+  color: var(--font-color) !important;
+  background: var(--body-background) !important;
+}
+
+.nav-item a {
+  color: var(--font-color) !important;
+  font-family: var(--Font-Medium) !important;
+  font-size: 14px;
+}
+
+.bg-linear {
+  width: 100%;
+  background: linear-gradient(to right, #fcc101a6, #ee313156);
+  min-height: 100vh;
+}
+
+.bg-linear .border-header {
+  border: 2px solid var(--header-border);
+}
+
+.navbar-nav .header-logo::after{
+  content: '';
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  top: -11px;
+  left: 11px;
+  filter: blur(25px);
+  z-index: -9;
+  background-color: #FCC101;
+}
