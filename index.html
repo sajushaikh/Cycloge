@@ -4,13 +4,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
   <title>Cycloge</title>
 </head>
 
 <body>
-  <section class="bg-linear">
+  <section class="bg-linear pb-4">
     <nav class="navbar navbar-expand-lg bg-transparent border-header">
       <div class="container-fluid px-5 pt-2">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -19,28 +22,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav w-100 justify-content-between align-items-center mb-2 mb-lg-0">
-            <div class="left d-flex align-items-center">
+            <div class="left d-flex align-items-center column">
               <li class="nav-item px-3">
-                <img src="assets/Home.png" alt="" width="50" />
+                <a class="nav-link" href="javascript:void(0)"><img src="assets/Home.png" alt="" width="50" /></a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" aria-current="page" href="#">Why Cycloge ?</a>
+                <a class="nav-link" aria-current="Why Cycloge" href="#why_cycloge">Why Cycloge ?</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" aria-current="page" href="#">Power</a>
+                <a class="nav-link" aria-current="Power" href="#powers">Power</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" aria-current="page" href="#">Tokenomics</a>
+                <a class="nav-link" aria-current="Tokenomics" href="#tokenomics">Tokenomics</a>
               </li>
             </div>
 
-            <li class="nav-item header-logo position-relative">
+            <li class="nav-item header-logo position-relative column text-center">
               <img src="assets/header_logo.png" alt="" width="100" />
             </li>
 
-            <div class="right d-flex align-items-center">
+            <div class="right d-flex align-items-center column justify-content-end">
               <li class="nav-item px-3">
-                <a class="nav-link" aria-current="page" href="#">RoadMap</a>
+                <a class="nav-link" aria-current="RoadMap" href="#road-map">RoadMap</a>
               </li>
               <li class="nav-item px-3">
                 <a class="nav-link" aria-current="page" href="#">Creator Dapp</a>
@@ -50,9 +53,317 @@
         </div>
       </div>
     </nav>
+
+    <div class="home-section container-fluid px-5 text-center position-relative">
+      <div class="d-flex flex-nowrap justify-content-center align-items-center">
+        <div class="left img-section hover-effect">
+          <img src="assets/Home/left_king.png" class="img-fluid" alt="heaven_king">
+        </div>
+        <div class="middle img-section position-relative">
+          <div class="hover-effect">
+            <img src="assets/Home/middle_king.png" class="img-fluid" alt="middle_king">
+          </div>
+          <img src="assets/Home/cycloge.png" class="cycloge_circle" alt="cycloge" class="img-fluid" width="300">
+        </div>
+        <div class="right img-section hover-effect">
+          <img src="assets/Home/right_king.png" class="img-fluid" alt="devil_king">
+        </div>
+      </div>
+      <div class="text-center font-medium mt-5 home-content">
+        <p>Why apes are ruling the NFT space, it’s time for Cycloge to take over and make Doge the best of all industry
+        </p>
+      </div>
+    </div>
+
+    <div class="section-border"></div>
+
+    <div class="text-center pt-4">
+      <h1 class="mb-0 text-center mt-5">Why Cycloges ? </h1>
+    </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <section class="why_cycloge overflow-hidden mb-5" id="why_cycloge">
+    <div class="container-fluid overflow-hidden position-relative d-flex align-items-center px-0">
+      <div class="bg-blur"></div>
+      <div class="d-flex justify-content-center w-100 align-items-center">
+        <div class="me-5 fade-right position-relative" data-aos="fade-right">
+          <img src="assets/Why_Cycloge/zombie_cycloge.png" class="hover-effect why_cycloge_img" width="400em"
+            height="400em" alt="">
+          <div class="bat-1 bat"></div>
+          <div class="bat-2 bat"></div>
+          <div class="bat-3 bat"></div>
+          <div class="bat-4 bat"></div>
+        </div>
+        <div class="fade-left" data-aos="fade-left">
+          <h2 class="mb-3">Welcome to the world of Cycloge </h2>
+          <p class="font-medium font-20">
+            "The fusion of one-eyed wonder cyclops and <br>
+            the boss of meme coin" - Doge
+          </p>
+
+          <p class="font-medium mt-4 text-white" style="max-width: 500px;">
+            A joke turned into an unprecedented reality, all thanks to the
+            visionary, Papa Elon! We, at Cycloge, have taken it upon ourselves
+            to design the most insane and awe-inspiring NFTs for our beloved
+            Kobusu, while maintaining the legacy of Doge.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="text-center m-auto why_cycloge_text mt-5">
+      <p class="font-medium ">
+        Are you ready to begin a journey with us to fullfill the wishes of this one-eyed doge and make cyclogethe most
+        talked NFT collection in this history? Go and check out <a href="" class="text-gold">Cycloge Powers!</a>
+      </p>
+    </div>
+    <div class="section-border"></div>
+  </section>
+
+  <section class="powers mb-5" id="powers" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
+    <div class="text-center pt-4">
+      <h1 class="mb-5 text-center mt-5">Powers</h1>
+    </div>
+
+    <div class="swiper" id="power_slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="power p-3">
+            <div class="power-image me-4">
+              <img src="assets/Power/token_holder.png" alt="">
+            </div>
+            <div class="">
+              <h2 class="mt-4">Reflection of token holder :</h2>
+              <div class="mt-3 font-medium">
+                <h5>
+                  As a Cycloge token holder, you can enjoy daily
+                  Doge coin reflections based on your holdings!
+                  That's right, every 24 hours you'll receive
+                  reflections straight to your wallet.
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="power p-3">
+            <div class="power-image me-4">
+              <img src="assets/Power/construction_dapp.png" alt="">
+            </div>
+            <div class="">
+              <h2 class="mt-4"> Construction DAPP :</h2>
+              <div class="mt-3 font-medium">
+                <h5>
+                  Get ready to unleash your creativity with
+                  Cycloge's Construction DApp! This innovative
+                  platform will allow artists to design and
+                  showcase their very own Cycloge NFTs. Top
+                  Artists will be selecting through community
+                  voting weekly and they will get a chance to list
+                  their NFTs on the marketplace and even set
+                  their own bidding amounts for trade.
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="power p-3">
+            <div class="power-image me-4">
+              <img src="assets/Power/nft_holder.png" alt="">
+            </div>
+            <div class="">
+              <h2 class="mt-4">Reflection of NFT holder :</h2>
+              <div class="mt-3 font-medium">
+                <h5>
+                  Holder of our incredible NFT will recieve even higher reflections percentages compared to token
+                  holders! This means even more Doge Coin reflections for you. Be sure to check out our Tokenomics for
+                  all the details.
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-border"></div>
+  </section>
+
+  <section class="tokenomics mb-5" id="tokenomics" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
+    <div class="text-center pt-4">
+      <h1 class="mb-5 text-center mt-5">Tokenomics</h1>
+    </div>
+
+    <div class="tokenomics_data container-fluid px-5">
+      <div class="d-flex justify-content-center flex-wrap">
+        <div class="d-flex flex-column border-right tokenomic">
+          <h6 class="title">NAME</h6>
+          <h2 class="tokenomics_text mb-0">Cycloge</h2>
+        </div>
+        <div class="d-flex flex-column border-right tokenomic">
+          <h6 class="title">SYMBOL</h6>
+          <h2 class="tokenomics_text mb-0">CLG</h2>
+        </div>
+        <div class="d-flex flex-column border-right tokenomic">
+          <h6 class="title">TOTAL DISTRIBUTION</h6>
+          <h2 class="tokenomics_text mb-0" id="total_distribution"></h2>
+        </div>
+        <div class="d-flex flex-column tokenomic">
+          <h6 class="title">BUY/SELL TAX</h6>
+          <div class="d-flex align-items-center">
+            <h2 class="tokenomics_text mb-0 me-2" id="buy_sell"></h2>
+            <img src="assets/Tokenomics/chevron.down.png" width="20" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tokenomics_graph container-fluid mt-5">
+      <div class="img-section text-center position-relative">
+        <div class="inner">
+          <img src="assets/Tokenomics/tokenomics.png" class="img-fluid w-50" alt="">
+          <img src="assets/Tokenomics/dog_pow.png" class="img-fluid position-absolute" alt="" id="dog_pow">
+        </div>
+        <div class="graph-details">
+          <div data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic"
+            class="cex-listing d-flex align-items-center position-absolute">
+            <div class="line me-3"></div>
+            <div class="circle me-3"></div>
+            <span class="color me-2">
+              10%
+            </span>
+            Cex Listings
+          </div>
+          <div data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic" data-aos-delay="200"
+            class="liquidity d-flex align-items-center position-absolute">
+            <div class="line me-3"></div>
+            <div class="circle me-3"></div>
+            <span class="color me-2">20%</span>
+            Liquidity
+          </div>
+          <div data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic" data-aos-delay="300"
+            class="burn d-flex align-items-center position-absolute mb-5">
+            <div class="line me-3"></div>
+            <div class="circle me-3"></div>
+            <span class="color me-2">30%</span>
+            Burn
+          </div>
+          <div data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-out-cubic" data-aos-delay="400"
+            class="presale d-flex align-items-center position-absolute">
+            <span class="color me-2">40%</span>
+            Presale
+            <div class="circle me-3 ms-3"></div>
+            <div class="line me-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tokenomics_note">
+      <p class="font-medium">Note : Dogecoin reflections will be distributed to the holders wallets automatically on a
+        daily basis, based on
+        their holdings at the time of distribution</p>
+    </div>
+
+    <div class="section-border"></div>
+  </section>
+
+  <div class="road-map mb-5" id="road-map" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
+    <div class="text-center pt-4">
+      <h1 class="mb-5 text-center mt-5">Roadmap</h1>
+    </div>
+
+    <div class="swiper position-relative" id="roadmap_slider">
+      <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="roadmap_content">
+            <div class="bullet">
+              <p class="mb-0">PHASE 01</p>
+            </div>
+
+            <div class="roadmap-points">
+              <ul>
+                <li>Website development</li>
+                <li>Customised NFT crafting</li>
+                <li>Contract creation</li>
+                <li>Pre-launch sale</li>
+                <li>PCS token launch</li>
+              </ul>
+            </div>
+            <div class="roadmap-date">
+              <p class="font-medium m-0">24 Nov 2022</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="roadmap_content">
+            <div class="bullet">
+              <p class="mb-0">PHASE 02</p>
+            </div>
+
+            <div class="roadmap-points">
+              <ul>
+                <li>Extensive Market Research</li>
+                <li>Wide Scale Advertising Push</li>
+                <li>Preview of Exclusive NFT’s</li>
+                <li>OpenSea Listing</li>
+                <li>Premium NFT Distribution to Top 25 Holders</li>
+              </ul>
+            </div>
+            <div class="roadmap-date">
+              <p class="font-medium m-0">24 Nov 2022</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="roadmap_content">
+            <div class="bullet">
+              <p class="mb-0">PHASE 03</p>
+            </div>
+
+            <div class="roadmap-points">
+              <ul>
+                <li>Website development</li>
+                <li>Customised NFT crafting</li>
+                <li>Contract creation</li>
+                <li>Pre-launch sale</li>
+                <li>PCS token launch</li>
+              </ul>
+            </div>
+            <div class="roadmap-date">
+              <p class="font-medium m-0">24 Nov 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="whitepaper" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
+    <div class="section-border mb-5"></div>
+
+    <div class="text-center">
+      <div class="d-flex align-items-start justify-content-center">
+        <h1 class="me-3 mb-0"><a href="javascript:void(0)">Whitepaper</a></h1>
+        <img src="assets/Whitepaper_Creators Dapp/link_arrow.png" class="mt-2" width="30" alt="">
+      </div>
+    </div>
+    <div class="section-border"></div>
+
+    <div class="text-center my-5">
+      <div class="d-flex align-items-start justify-content-center">
+        <h1 class="me-3 mb-0"><a href="javascript:void(0)">Creators Dapp</a></h1>
+        <img src="assets/Whitepaper_Creators Dapp/link_arrow.png" class="mt-2" width="30" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="countUp/countUp.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
