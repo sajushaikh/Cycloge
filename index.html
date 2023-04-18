@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <section class="bg-linear pb-4">
+  <section class="bg-linear overflow-hidden pb-4">
     <nav class="navbar navbar-expand-lg bg-transparent border-header">
       <div class="container-fluid px-5 pt-2">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -63,7 +63,7 @@
           <div class="hover-effect">
             <img src="assets/Home/middle_king.png" class="img-fluid" alt="middle_king">
           </div>
-          <img src="assets/Home/cycloge.png" class="cycloge_circle" alt="cycloge" class="img-fluid" width="300">
+          <img src="assets/Home/cycloge.png" class="cycloge_circle" alt="cycloge" class="img-fluid">
         </div>
         <div class="right img-section hover-effect">
           <img src="assets/Home/right_king.png" class="img-fluid" alt="devil_king">
@@ -85,16 +85,15 @@
   <section class="why_cycloge overflow-hidden mb-5" id="why_cycloge">
     <div class="container-fluid overflow-hidden position-relative d-flex align-items-center px-0">
       <div class="bg-blur"></div>
-      <div class="d-flex justify-content-center w-100 align-items-center">
-        <div class="me-5 fade-right position-relative" data-aos="fade-right">
-          <img src="assets/Why_Cycloge/zombie_cycloge.png" class="hover-effect why_cycloge_img" width="400em"
-            height="400em" alt="">
+      <div class="d-flex why_cycloge_container justify-content-center w-100 px-3 align-items-center">
+        <div class="me-5 fade-right position-relative img-section" data-aos="fade-right">
+          <img src="assets/Why_Cycloge/zombie_cycloge.png" class="hover-effect why_cycloge_img" alt="">
           <div class="bat-1 bat"></div>
           <div class="bat-2 bat"></div>
           <div class="bat-3 bat"></div>
           <div class="bat-4 bat"></div>
         </div>
-        <div class="fade-left" data-aos="fade-left">
+        <div class="content-section" data-aos="fade-left">
           <h2 class="mb-3">Welcome to the world of Cycloge </h2>
           <p class="font-medium font-20">
             "The fusion of one-eyed wonder cyclops and <br>
@@ -111,6 +110,7 @@
       </div>
 
     </div>
+    <div class="section-border mobile d-none"></div>
     <div class="text-center m-auto why_cycloge_text mt-5">
       <p class="font-medium ">
         Are you ready to begin a journey with us to fullfill the wishes of this one-eyed doge and make cyclogethe most
@@ -120,7 +120,8 @@
     <div class="section-border"></div>
   </section>
 
-  <section class="powers mb-5" id="powers" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
+  <section class="powers mb-5 overflow-hidden" id="powers" data-aos="fade-up" data-aos-easing="linear"
+    data-aos-delay="200">
     <div class="text-center pt-4">
       <h1 class="mb-5 text-center mt-5">Powers</h1>
     </div>
@@ -187,33 +188,93 @@
       </div>
     </div>
 
+    <div class="power_mobile container-fluid d-none" id="power_mobile">
+      <div class="power p-3">
+        <div class="power-image">
+          <img src="assets/Power/token_holder.png" alt="">
+        </div>
+        <div class="">
+          <h3 class="mt-4">Reflection of token holder :</h3>
+          <div class="mt-3 font-medium">
+            <h5>
+              As a Cycloge token holder, you can enjoy daily
+              Doge coin reflections based on your holdings!
+              That's right, every 24 hours you'll receive
+              reflections straight to your wallet.
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="power p-3">
+        <div class="power-image">
+          <img src="assets/Power/construction_dapp.png" alt="">
+        </div>
+        <div class="">
+          <h3 class="mt-4"> Construction DAPP :</h3>
+          <div class="mt-3 font-medium">
+            <h5>
+              Get ready to unleash your creativity with
+              Cycloge's Construction DApp! This innovative
+              platform will allow artists to design and
+              showcase their very own Cycloge NFTs. Top
+              Artists will be selecting through community
+              voting weekly and they will get a chance to list
+              their NFTs on the marketplace and even set
+              their own bidding amounts for trade.
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="power p-3">
+        <div class="power-image">
+          <img src="assets/Power/nft_holder.png" alt="">
+        </div>
+        <div class="">
+          <h3 class="mt-4">Reflection of NFT holder :</h3>
+          <div class="mt-3 font-medium">
+            <h5>
+              Holder of our incredible NFT will recieve even higher reflections percentages compared to token
+              holders! This means even more Doge Coin reflections for you. Be sure to check out our Tokenomics for
+              all the details.
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="section-border"></div>
   </section>
 
-  <section class="tokenomics mb-5" id="tokenomics" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
+  <section class="tokenomics overflow-hidden mb-5" id="tokenomics" data-aos="fade-up" data-aos-easing="linear"
+    data-aos-delay="200">
     <div class="text-center pt-4">
       <h1 class="mb-5 text-center mt-5">Tokenomics</h1>
     </div>
 
     <div class="tokenomics_data container-fluid px-5">
-      <div class="d-flex justify-content-center flex-wrap">
-        <div class="d-flex flex-column border-right tokenomic">
-          <h6 class="title">NAME</h6>
-          <h2 class="tokenomics_text mb-0">Cycloge</h2>
+      <div class="d-flex justify-content-center inner">
+        <div class="d-flex w-md-100">
+          <div class="d-flex w-md-100 flex-column border-right tokenomic">
+            <h6 class="title">NAME</h6>
+            <h2 class="tokenomics_text mb-0">Cycloge</h2>
+          </div>
+          <div class="d-flex w-md-70 flex-column border-right tokenomic">
+            <h6 class="title">SYMBOL</h6>
+            <h2 class="tokenomics_text mb-0">CLG</h2>
+          </div>
         </div>
-        <div class="d-flex flex-column border-right tokenomic">
-          <h6 class="title">SYMBOL</h6>
-          <h2 class="tokenomics_text mb-0">CLG</h2>
-        </div>
-        <div class="d-flex flex-column border-right tokenomic">
-          <h6 class="title">TOTAL DISTRIBUTION</h6>
-          <h2 class="tokenomics_text mb-0" id="total_distribution"></h2>
-        </div>
-        <div class="d-flex flex-column tokenomic">
-          <h6 class="title">BUY/SELL TAX</h6>
-          <div class="d-flex align-items-center">
-            <h2 class="tokenomics_text mb-0 me-2" id="buy_sell"></h2>
-            <img src="assets/Tokenomics/chevron.down.png" width="20" alt="">
+        <div class="d-flex w-md-100">
+          <div class="d-flex w-md-100 flex-column border-right tokenomic">
+            <h6 class="title web">TOTAL DISTRIBUTION</h6>
+            <h6 class="title mobile d-none">DISTRIBUTION</h6>
+            <h2 class="tokenomics_text mb-0" id="total_distribution"></h2>
+          </div>
+          <div class="d-flex w-md-70 flex-column tokenomic">
+            <h6 class="title">BUY/SELL TAX</h6>
+            <div class="d-flex align-items-center">
+              <h2 class="tokenomics_text mb-0 me-2" id="buy_sell"></h2>
+              <img src="assets/Tokenomics/chevron.down.png" width="20" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -222,7 +283,7 @@
     <div class="tokenomics_graph container-fluid mt-5">
       <div class="img-section text-center position-relative">
         <div class="inner">
-          <img src="assets/Tokenomics/tokenomics.png" class="img-fluid w-50" alt="">
+          <img src="assets/Tokenomics/tokenomics.png" class="img-fluid w-50 graph-img" alt="Graph">
           <img src="assets/Tokenomics/dog_pow.png" class="img-fluid position-absolute" alt="" id="dog_pow">
         </div>
         <div class="graph-details">
@@ -269,7 +330,8 @@
     <div class="section-border"></div>
   </section>
 
-  <div class="road-map mb-5" id="road-map" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
+  <div class="road-map mb-5 overflow-hidden" id="road-map" data-aos="fade-up" data-aos-easing="linear"
+    data-aos-delay="200">
     <div class="text-center pt-4">
       <h1 class="mb-5 text-center mt-5">Roadmap</h1>
     </div>
@@ -341,7 +403,7 @@
     </div>
   </div>
 
-  <div class="whitepaper" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
+  <div class="whitepaper overflow-hidden" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
     <div class="section-border mb-5"></div>
 
     <div class="text-center">
@@ -360,6 +422,7 @@
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="countUp/countUp.js"></script>

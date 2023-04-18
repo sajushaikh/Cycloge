@@ -50,6 +50,7 @@ body {
   color: var(--font-color) !important;
   background: var(--body-background) !important;
   scroll-behavior: smooth;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -103,7 +104,7 @@ a:hover {
 
 .navbar-nav .column {
   float: left;
-  width: 33.33%;
+  width: 50%;
 }
 
 .hover-effect {
@@ -123,19 +124,23 @@ a:hover {
 }
 
 .home-section .img-section {
-  width: 300px;
+  width: 15vw;
+  max-width: 325px;
 }
 
 .home-section .img-section.middle {
-  width: 425px;
-  margin-right: 4rem;
-  margin-left: 4rem;
+  width: 22vw;
+  max-width: 450px;
+  margin-right: 3.5vw;
+  margin-left: 3.5vw;
 }
 
 .home-section .img-section.middle .cycloge_circle {
   position: absolute;
-  top: -110px;
-  right: -120px;
+  top: -23%;
+  right: -25%;
+  width: 14vw;
+  max-width: 325px;
 }
 
 .home-section .home-content p {
@@ -212,6 +217,11 @@ a:hover {
   z-index: -9;
 }
 
+.why_cycloge .container-fluid .why_cycloge_img {
+  width: 400px;
+  height: 400px;
+}
+
 .why_cycloge_img:hover~.bat.bat-1 {
   transform: scale(3) rotate(-45deg) translate3d(0px, -300px, 0px);
   transition: 4.5s;
@@ -235,34 +245,51 @@ a:hover {
   transition-delay: 100ms;
 }
 
-.powers .power {
+#power_slider .power,
+#power_mobile .power {
   border: 2.5px solid #e4ae07;
   border-radius: 35px;
   color: #d9d9d9;
+}
+
+#power_slider .power {
   min-height: 300px;
   display: flex;
 }
 
-.powers_header {
+#power_mobile .power {
+  max-width: 550px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#power_slider .powers_header {
   font-size: 50px;
   text-align: center;
   margin-bottom: 1.20em;
   color: #d9d9d9;
 }
 
-.power-image img {
+#power_slider .power-image img,
+#power_mobile .power-image img {
   width: 170px;
   border-radius: 25px;
   box-shadow: 1px 1px 29px #2C2104;
 }
 
+#power_mobile .power-image img {
+  width: 150px;
+}
+
 .tokenomics .tokenomics_data .title {
   font-family: var(--Font-Bold);
   letter-spacing: 4px;
+  width: max-content;
 }
 
 .tokenomics .tokenomics_data .tokenomic {
-  padding: 0.7rem 4rem;
+  padding: 0.7rem 3rem;
 }
 
 .tokenomics .tokenomics_data .border-right {
@@ -294,7 +321,7 @@ a:hover {
 }
 
 .tokenomics .tokenomics_graph .graph-details .cex-listing {
-  top: 60px;
+  top: 10%;
   right: 115px;
 }
 
@@ -304,7 +331,7 @@ a:hover {
 }
 
 .tokenomics .tokenomics_graph .graph-details .burn {
-  bottom: 170px;
+  bottom: 28%;
   right: 100px;
 }
 
@@ -333,60 +360,42 @@ a:hover {
   color: #9011BD;
 }
 
-.tokenomics .tokenomics_graph .graph-details .cex-listing .line {
-  height: 2px;
-  width: 150px;
-  background-color: #CBC310;
-  border-radius: 100px;
-}
-
-.tokenomics .tokenomics_graph .graph-details .liquidity .line {
-  height: 2px;
-  width: 150px;
-  background-color: #10C74E;
-  border-radius: 100px;
-}
-
-.tokenomics .tokenomics_graph .graph-details .burn .line {
-  height: 2px;
-  width: 150px;
-  background-color: #109CB9;
-  border-radius: 100px;
-}
-
+.tokenomics .tokenomics_graph .graph-details .cex-listing .line,
+.tokenomics .tokenomics_graph .graph-details .liquidity .line,
+.tokenomics .tokenomics_graph .graph-details .burn .line,
 .tokenomics .tokenomics_graph .graph-details .presale .line {
   height: 2px;
   width: 150px;
-  background-color: #9011BD;
   border-radius: 100px;
 }
 
-.tokenomics .tokenomics_graph .graph-details .cex-listing .circle {
-  height: 10px;
-  width: 10px;
-  background-color: #CBC310;
-  border-radius: 50%;
-}
-
-.tokenomics .tokenomics_graph .graph-details .liquidity .circle {
-  height: 10px;
-  width: 10px;
-  background-color: #10C74E;
-  border-radius: 50%;
-}
-
-.tokenomics .tokenomics_graph .graph-details .burn .circle {
-  height: 10px;
-  width: 10px;
-  background-color: #109CB9;
-  border-radius: 50%;
-}
-
+.tokenomics .tokenomics_graph .graph-details .cex-listing .circle,
+.tokenomics .tokenomics_graph .graph-details .liquidity .circle,
+.tokenomics .tokenomics_graph .graph-details .burn .circle,
 .tokenomics .tokenomics_graph .graph-details .presale .circle {
-  height: 10px;
-  width: 10px;
-  background-color: #9011BD;
+  height: 12px;
+  width: 12px;
   border-radius: 50%;
+}
+
+.tokenomics .tokenomics_graph .graph-details .cex-listing .line,
+.tokenomics .tokenomics_graph .graph-details .cex-listing .circle {
+  background-color: #CBC310;
+}
+
+.tokenomics .tokenomics_graph .graph-details .liquidity .line,
+.tokenomics .tokenomics_graph .graph-details .liquidity .circle {
+  background-color: #10C74E;
+}
+
+.tokenomics .tokenomics_graph .graph-details .burn .line,
+.tokenomics .tokenomics_graph .graph-details .burn .circle {
+  background-color: #109CB9;
+}
+
+.tokenomics .tokenomics_graph .graph-details .presale .line,
+.tokenomics .tokenomics_graph .graph-details .presale .circle {
+  background-color: #9011BD;
 }
 
 @keyframes rotation {
@@ -487,4 +496,280 @@ a:hover {
   font-size: 13px;
   opacity: 0.5;
   text-align: right;
+}
+
+@media only screen and (max-width: 1070px) {
+
+  .tokenomics .tokenomics_graph .graph-details .cex-listing .line,
+  .tokenomics .tokenomics_graph .graph-details .burn .line {
+    width: 90px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .home-section .img-section {
+    width: 19vw;
+  }
+
+  .home-section .img-section.middle {
+    width: 26vw;
+  }
+
+  .home-section .img-section.middle .cycloge_circle {
+    width: 16vw;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .cex-listing .line,
+  .tokenomics .tokenomics_graph .graph-details .burn .line {
+    width: 70px;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .liquidity .line,
+  .tokenomics .tokenomics_graph .graph-details .presale .line {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 962px) {
+  .why_cycloge .container-fluid .why_cycloge_img {
+    width: 320px;
+    height: 320px;
+  }
+
+  #power_slider {
+    display: none;
+  }
+
+  #power_mobile {
+    display: block !important;
+  }
+
+  #power_mobile .power .font-medium h5 {
+    font-size: 16px;
+  }
+
+  .font-20 {
+    font-size: 18px;
+  }
+
+  .tokenomics .tokenomics_data .tokenomic {
+    padding: 0.7rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+
+  .tokenomics .tokenomics_graph .graph-details .cex-listing .line,
+  .tokenomics .tokenomics_graph .graph-details .burn .line,
+  .tokenomics .tokenomics_graph .graph-details .liquidity .line,
+  .tokenomics .tokenomics_graph .graph-details .presale .line {
+    display: none;
+  }
+
+  .tokenomics_graph .img-section .inner .graph-img {
+    width: 70% !important;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .cex-listing {
+    top: 7%;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .burn {
+    bottom: 18%;
+    right: 18%;
+  }
+
+  .tokenomics .tokenomics_graph .img-section #dog_pow {
+    width: 18%;
+  }
+
+  .tokenomics .tokenomics_data .tokenomic {
+    padding: 0.7rem 0rem;
+    border: none;
+  }
+
+  .tokenomics .tokenomics_data .w-md-100 {
+    width: 100%;
+  }
+
+  .tokenomics .tokenomics_data .w-md-70 {
+    width: 70%;
+  }
+
+  .tokenomics_data .inner {
+    flex-wrap: wrap;
+  }
+
+  .tokenomics .tokenomics_data .title.web {
+    display: none !important;
+  }
+
+  .tokenomics .tokenomics_data .title.mobile {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home-section .img-section {
+    width: 27vw;
+  }
+
+  .home-section .img-section.middle {
+    width: 34vw;
+  }
+
+  .home-section .img-section.middle .cycloge_circle {
+    width: 21vw;
+  }
+
+
+  .why_cycloge .container-fluid {
+    height: auto;
+  }
+
+  .why_cycloge .why_cycloge_container {
+    flex-direction: column;
+  }
+
+  .why_cycloge .why_cycloge_container .img-section {
+    margin-right: 0px !important;
+    margin-top: 2rem;
+  }
+
+  .why_cycloge .container-fluid .why_cycloge_img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .why_cycloge .why_cycloge_container .content-section {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .why_cycloge .container-fluid .bg-blur {
+    background-image: url(assets/Why_Cycloge/why_cycloge_bg_mobile.png);
+    height: 310px;
+    filter: blur(3px);
+  }
+
+  .section-border.mobile {
+    display: block !important;
+  }
+
+}
+
+@media only screen and (max-width: 660px) {
+
+  .tokenomics .tokenomics_graph .graph-details .cex-listing,
+  .tokenomics .tokenomics_graph .graph-details .burn,
+  .tokenomics .tokenomics_graph .graph-details .liquidity,
+  .tokenomics .tokenomics_graph .graph-details .presale {
+    font-size: 16px;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .burn {
+    margin-bottom: 0px !important;
+    bottom: 21%;
+  }
+
+  .tokenomics .tokenomics_data {
+    padding: 2rem !important;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .liquidity {
+    top: 24%;
+    right: 3px;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .cex-listing {
+    right: 75px;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .presale {
+    top: 20%;
+    left: 3px;
+  }
+
+}
+
+@media only screen and (max-width: 549px) {
+  .home-section .img-section {
+    width: 23vw;
+  }
+
+  .home-section .img-section.middle {
+    width: 30vw;
+  }
+
+  .home-section .img-section.middle .cycloge_circle {
+    width: 19vw;
+  }
+
+  .tokenomics .tokenomics_data {
+    padding: 1rem !important;
+  }
+
+  .tokenomics .tokenomics_data .title {
+    font-size: 15px;
+  }
+
+  .tokenomics .tokenomics_data .tokenomics_text {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .home-section .img-section {
+    width: auto;
+  }
+
+  .home-section .img-section.middle {
+    width: auto;
+    z-index: 999;
+    margin-right: -80px;
+    margin-left: -80px;
+  }
+
+  .home-section .img-section img {
+    width: 210px;
+    max-width: unset !important;
+  }
+
+  .home-section .img-section.middle img {
+    width: 300px;
+    max-width: unset !important;
+  }
+
+  .home-section .img-section.middle .cycloge_circle {
+    width: 200px;
+  }
+
+  .font-20 {
+    font-size: 15px;
+  }
+
+  .why_cycloge .why_cycloge_text {
+    max-width: 314px;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .cex-listing,
+  .tokenomics .tokenomics_graph .graph-details .burn,
+  .tokenomics .tokenomics_graph .graph-details .liquidity,
+  .tokenomics .tokenomics_graph .graph-details .presale {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .home-section .img-section img {
+    width: 170px;
+  }
+
+  .home-section .img-section.middle img {
+    width: 260px;
+  }
+
+  .home-section .img-section.middle .cycloge_circle {
+    width: 180px;
+  }
 }

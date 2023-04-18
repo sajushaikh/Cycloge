@@ -12,9 +12,9 @@ imageElements.forEach((element) => {
     const xVal = e.layerX;
     const yVal = e.layerY;
 
-    const yRotation = 20 * ((xVal - width / 2) / width);
+    const yRotation = 30 * ((xVal - width / 2) / width);
 
-    const xRotation = -20 * ((yVal - height / 2) / height);
+    const xRotation = -30 * ((yVal - height / 2) / height);
 
     const string =
       "perspective(500px) scale(1) rotateX(" +
@@ -43,15 +43,19 @@ imageElements.forEach((element) => {
 });
 
 const powerSwiper = new Swiper("#power_slider", {
-  slidesPerView: 2,
-  autoHeight: true,
+  slidesPerView: 1,
   centeredSlides: true,
   spaceBetween: 40,
+
+  breakpoints: {
+    962: {
+      slidesPerView: 2,
+    },
+  }
 });
 
 const roadmapSwiper = new Swiper("#roadmap_slider", {
-  slidesPerView: 3,
-  autoHeight: true,
+  slidesPerView: 1,
   centeredSlides: true,
   spaceBetween: 40,
 
@@ -62,6 +66,15 @@ const roadmapSwiper = new Swiper("#roadmap_slider", {
       return `<div class="roadmap-pagination ${className}"></div>`;
     },
   },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  }
 });
 
 let totalDistribution = new CountUp("total_distribution", 0, 100000000000);
