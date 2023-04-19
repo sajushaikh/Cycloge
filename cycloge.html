@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="cycloge.css" />
   <link rel="icon" type="image/x-icon" href="assets/favicon.png">
   <title>Cycloge</title>
 </head>
@@ -15,13 +15,16 @@
 <body>
   <section class="bg-linear overflow-hidden pb-4">
     <nav class="navbar navbar-expand-lg bg-transparent border-header">
-      <div class="container-fluid px-5 pt-2">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container-fluid px-5 pt-2 navbar-container">
+        <div class="mobile_logo_section d-none">
+          <img src="assets/logo_mobile.png" alt="" class="mobile_logo">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cyclogeNavbar"
+          aria-controls="cyclogeNavbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav w-100 justify-content-between align-items-center mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="cyclogeNavbar">
+          <ul class="navbar-nav w-100 justify-content-between align-items-center mb-2 mb-lg-0 mt-2 mt-lg-0">
             <div class="left d-flex align-items-center column">
               <li class="nav-item px-3">
                 <a class="nav-link" href="javascript:void(0)"><img src="assets/Home.png" alt="" width="50" /></a>
@@ -37,7 +40,7 @@
               </li>
             </div>
 
-            <li class="nav-item header-logo position-relative column text-center">
+            <li class="nav-item header-logo position-relative column text-center d-none d-lg-block">
               <img src="assets/header_logo.png" alt="" width="100" />
             </li>
 
@@ -46,7 +49,7 @@
                 <a class="nav-link" aria-current="RoadMap" href="#road-map">RoadMap</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" aria-current="page" href="#">Creator Dapp</a>
+                <a class="nav-link" aria-current="D-App" href="DApp.html">Creator Dapp</a>
               </li>
             </div>
           </ul>
@@ -134,7 +137,7 @@
               <img src="assets/Power/token_holder.png" alt="">
             </div>
             <div class="">
-              <h2 class="mt-4">Reflection of token holder :</h2>
+              <h3 class="mt-4">Reflection of token holder :</h3>
               <div class="mt-3 font-medium">
                 <h5>
                   As a Cycloge token holder, you can enjoy daily
@@ -152,7 +155,7 @@
               <img src="assets/Power/construction_dapp.png" alt="">
             </div>
             <div class="">
-              <h2 class="mt-4"> Construction DAPP :</h2>
+              <h3 class="mt-4"> Construction DAPP :</h3>
               <div class="mt-3 font-medium">
                 <h5>
                   Get ready to unleash your creativity with
@@ -174,7 +177,7 @@
               <img src="assets/Power/nft_holder.png" alt="">
             </div>
             <div class="">
-              <h2 class="mt-4">Reflection of NFT holder :</h2>
+              <h3 class="mt-4">Reflection of NFT holder :</h3>
               <div class="mt-3 font-medium">
                 <h5>
                   Holder of our incredible NFT will recieve even higher reflections percentages compared to token
@@ -245,7 +248,7 @@
     <div class="section-border"></div>
   </section>
 
-  <section class="tokenomics overflow-hidden mb-5" id="tokenomics" data-aos="fade-up" data-aos-easing="linear"
+  <section class="tokenomics overflow-hidden mb-4" id="tokenomics" data-aos="fade-up" data-aos-easing="linear"
     data-aos-delay="200">
     <div class="text-center pt-4">
       <h1 class="mb-5 text-center mt-5">Tokenomics</h1>
@@ -330,7 +333,7 @@
     <div class="section-border"></div>
   </section>
 
-  <div class="road-map mb-5 overflow-hidden" id="road-map" data-aos="fade-up" data-aos-easing="linear"
+  <div class="road-map overflow-hidden" id="road-map" data-aos="fade-up" data-aos-easing="linear"
     data-aos-delay="200">
     <div class="text-center pt-4">
       <h1 class="mb-5 text-center mt-5">Roadmap</h1>
@@ -416,7 +419,7 @@
 
     <div class="text-center my-5">
       <div class="d-flex align-items-start justify-content-center">
-        <h1 class="me-3 mb-0"><a href="javascript:void(0)">Creators Dapp</a></h1>
+        <h1 class="me-3 mb-0"><a href="DApp.html">Creators Dapp</a></h1>
         <img src="assets/Whitepaper_Creators Dapp/link_arrow.png" class="mt-2" width="30" alt="">
       </div>
     </div>
@@ -426,7 +429,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="countUp/countUp.js"></script>
-  <script src="index.js"></script>
+  <script src="cycloge.js"></script>
 </body>
 
 </html>

@@ -7,6 +7,7 @@ imageElements.forEach((element) => {
   const width = element.clientWidth;
 
   element.addEventListener("mousemove", handleMove);
+  element.addEventListener("click", handleMove);
 
   function handleMove(e) {
     const xVal = e.layerX;

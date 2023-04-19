@@ -84,6 +84,10 @@ a:hover {
   background: linear-gradient(to right, #fcc101a6, #ee313156);
 }
 
+.bg-linear.creator_Dapp {
+  min-height: 100vh;
+}
+
 .bg-linear .border-header {
   border: 2px solid var(--header-border);
 }
@@ -119,6 +123,16 @@ a:hover {
   font-size: 20px;
 }
 
+.section-border {
+  max-width: 250px;
+  background-color: #D9D9D9;
+  height: 2px;
+  mix-blend-mode: normal;
+  margin: auto;
+  margin-top: 60px;
+  opacity: 0.1;
+}
+
 .home-section {
   margin-top: 100px;
 }
@@ -148,14 +162,77 @@ a:hover {
   margin: auto;
 }
 
-.section-border {
-  max-width: 250px;
-  background-color: #D9D9D9;
-  height: 2px;
-  mix-blend-mode: normal;
+#creator_Dapp .d-app-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#creator_Dapp .d-app-section .center-img-section {
+  width: auto;
+  max-width: 480px;
   margin: auto;
-  margin-top: 60px;
-  opacity: 0.1;
+}
+
+#creator_Dapp .d-app-section .bone_1 {
+  top: 15%;
+  left: 15%;
+}
+
+#creator_Dapp .d-app-section .bone_2 {
+  left: 24%;
+  bottom: 18%;
+}
+
+#creator_Dapp .d-app-section .bone_3 {
+  top: 34%;
+  right: 15%;
+}
+
+#creator_Dapp .d-app-section .bone_1,
+#creator_Dapp .d-app-section .bone_2,
+#creator_Dapp .d-app-section .bone_3 {
+  width: auto;
+  max-width: 180px;
+}
+
+#creator_Dapp .d-app-section .bone_1,
+#creator_Dapp .d-app-section .bone_2,
+#creator_Dapp .d-app-section .bone_3 {
+  -webkit-animation: mover 1.5s infinite alternate;
+  animation: mover 1.5s infinite alternate;
+}
+
+#creator_Dapp .d-app-section .bone_2 {
+  animation-delay: 200ms;
+}
+
+#creator_Dapp .d-app-section .bone_2 {
+  animation-delay: 400ms;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 .why_cycloge .container-fluid {
@@ -245,8 +322,7 @@ a:hover {
   transition-delay: 100ms;
 }
 
-#power_slider .power,
-#power_mobile .power {
+#power_slider .power {
   border: 2.5px solid #e4ae07;
   border-radius: 35px;
   color: #d9d9d9;
@@ -262,6 +338,7 @@ a:hover {
   margin: auto;
   text-align: center;
   margin-bottom: 20px;
+  color: #d9d9d9;
 }
 
 #power_slider .powers_header {
@@ -498,11 +575,44 @@ a:hover {
   text-align: right;
 }
 
+@media only screen and (max-width: 1180px) {
+
+  #creator_Dapp .d-app-section .bone_1 {
+    top: 15%;
+    left: 10%;
+  }
+
+  #creator_Dapp .d-app-section .bone_2 {
+    left: 13%;
+    bottom: 23%;
+  }
+
+  #creator_Dapp .d-app-section .bone_3 {
+    top: 34%;
+    right: 10%;
+  }
+}
+
 @media only screen and (max-width: 1070px) {
 
   .tokenomics .tokenomics_graph .graph-details .cex-listing .line,
   .tokenomics .tokenomics_graph .graph-details .burn .line {
     width: 90px;
+  }
+
+  #creator_Dapp .d-app-section .bone_1 {
+    top: 15%;
+    left: 5%;
+  }
+
+  #creator_Dapp .d-app-section .bone_2 {
+    left: 8%;
+    bottom: 23%;
+  }
+
+  #creator_Dapp .d-app-section .bone_3 {
+    top: 34%;
+    right: 5%;
   }
 }
 
@@ -527,6 +637,46 @@ a:hover {
   .tokenomics .tokenomics_graph .graph-details .liquidity .line,
   .tokenomics .tokenomics_graph .graph-details .presale .line {
     width: 100px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-toggler-icon {
+    background-image: url(assets/menu.png);
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+    outline: none;
+    box-shadow: none !important;
+  }
+
+  .navbar-container {
+    padding: 0rem 2rem !important;
+  }
+
+  .navbar-container .mobile_logo_section {
+    display: block !important;
+  }
+
+  .navbar-container .mobile_logo_section img {
+    width: 200px;
+  }
+
+  .navbar-nav .column {
+    float: unset;
+    width: unset;
+    flex-direction: column;
+  }
+
+  #creator_Dapp .d-app-section .center-img-section {
+    max-width: 440px;
+  }
+
+  #creator_Dapp .d-app-section .bone_1,
+  #creator_Dapp .d-app-section .bone_2,
+  #creator_Dapp .d-app-section .bone_3 {
+    max-width: 160px;
   }
 }
 
@@ -607,6 +757,11 @@ a:hover {
   .tokenomics .tokenomics_data .title.mobile {
     display: block !important;
   }
+
+  #creator_Dapp .d-app-section .bone_3 {
+    top: 34%;
+    right: 1%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -621,7 +776,6 @@ a:hover {
   .home-section .img-section.middle .cycloge_circle {
     width: 21vw;
   }
-
 
   .why_cycloge .container-fluid {
     height: auto;
@@ -656,6 +810,25 @@ a:hover {
     display: block !important;
   }
 
+  .section-border {
+    height: 4px;
+  }
+
+  #creator_Dapp .d-app-section .bone_2 {
+    left: 5%;
+    bottom: 28%;
+  }
+
+  #creator_Dapp .d-app-section .center-img-section {
+    max-width: 400px;
+  }
+
+  #creator_Dapp .d-app-section .bone_1,
+  #creator_Dapp .d-app-section .bone_2,
+  #creator_Dapp .d-app-section .bone_3 {
+    max-width: 140px;
+  }
+
 }
 
 @media only screen and (max-width: 660px) {
@@ -682,7 +855,7 @@ a:hover {
   }
 
   .tokenomics .tokenomics_graph .graph-details .cex-listing {
-    right: 75px;
+    right: 55px;
   }
 
   .tokenomics .tokenomics_graph .graph-details .presale {
@@ -690,32 +863,10 @@ a:hover {
     left: 3px;
   }
 
-}
-
-@media only screen and (max-width: 549px) {
-  .home-section .img-section {
-    width: 23vw;
+  #creator_Dapp .d-app-section .center-img-section {
+    max-width: 340px;
   }
 
-  .home-section .img-section.middle {
-    width: 30vw;
-  }
-
-  .home-section .img-section.middle .cycloge_circle {
-    width: 19vw;
-  }
-
-  .tokenomics .tokenomics_data {
-    padding: 1rem !important;
-  }
-
-  .tokenomics .tokenomics_data .title {
-    font-size: 15px;
-  }
-
-  .tokenomics .tokenomics_data .tokenomics_text {
-    font-size: 24px;
-  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -757,6 +908,94 @@ a:hover {
   .tokenomics .tokenomics_graph .graph-details .liquidity,
   .tokenomics .tokenomics_graph .graph-details .presale {
     font-size: 14px;
+  }
+
+
+  #creator_Dapp .d-app-section .bone_3 {
+    top: 20%;
+    right: 1%;
+  }
+
+}
+
+@media only screen and (max-width: 549px) {
+  .tokenomics .tokenomics_data {
+    padding: 1rem !important;
+  }
+
+  .tokenomics .tokenomics_data .title {
+    font-size: 15px;
+  }
+
+  .tokenomics .tokenomics_data .tokenomics_text {
+    font-size: 24px;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .cex-listing {
+    right: 35px;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .cex-listing .circle,
+  .tokenomics .tokenomics_graph .graph-details .liquidity .circle,
+  .tokenomics .tokenomics_graph .graph-details .burn .circle {
+    margin-right: 0.5rem !important;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .presale .circle {
+    margin-left: 0.5rem !important;
+  }
+
+  .navbar-container .mobile_logo_section img {
+    width: 180px;
+  }
+
+  #creator_Dapp .d-app-section .bone_2 {
+    left: 1%;
+    bottom: 29%;
+  }
+
+  #creator_Dapp .d-app-section .bone_1,
+  #creator_Dapp .d-app-section .bone_3 {
+    max-width: 120px;
+  }
+
+  #creator_Dapp .d-app-section .center-img-section {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .tokenomics .tokenomics_data .title {
+    font-size: 14px;
+  }
+
+  .tokenomics .tokenomics_data .tokenomics_text {
+    font-size: 21px;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .cex-listing {
+    top: 3%;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .liquidity {
+    top: 19%;
+    right: 0px;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .burn {
+    bottom: 16%;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .presale {
+    top: 13%;
+    left: 0px;
+  }
+
+  .tokenomics .tokenomics_graph .graph-details .cex-listing,
+  .tokenomics .tokenomics_graph .graph-details .burn,
+  .tokenomics .tokenomics_graph .graph-details .liquidity,
+  .tokenomics .tokenomics_graph .graph-details .presale {
+    font-size: 13px;
   }
 }
 
