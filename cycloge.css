@@ -193,6 +193,42 @@ a:hover {
   right: 15%;
 }
 
+.d-app-section .main-images-section .center_dog_img {
+  position: absolute;
+  width: 61%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.d-app-section .main-images-section .drawing_hand_img {
+  position: absolute;
+  width: 31%;
+  top: 51%;
+  left: 62%;
+}
+
+.creator_circle_img{
+  animation: rotation_circle 5s infinite linear;
+}
+
+@keyframes rotation_circle {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.d-app-section .main-images-section .center_dog_img:hover {
+  top: 50%;
+  left: 50%;
+  transform: scale(1.03) translate(-49%, -48%);
+  transition-delay: 0s !important;
+}
+
 #creator_Dapp .d-app-section .bone_1,
 #creator_Dapp .d-app-section .bone_2,
 #creator_Dapp .d-app-section .bone_3 {
