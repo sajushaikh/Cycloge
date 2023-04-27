@@ -13,9 +13,9 @@ imageElements.forEach((element) => {
     const xVal = e.layerX;
     const yVal = e.layerY;
 
-    const yRotation = 30 * ((xVal - width / 2) / width);
+    const yRotation = 20 * ((xVal - width / 2) / width);
 
-    const xRotation = -30 * ((yVal - height / 2) / height);
+    const xRotation = -20 * ((yVal - height / 2) / height);
 
     const string =
       "perspective(500px) scale(1) rotateX(" +
@@ -47,19 +47,26 @@ const powerSwiper = new Swiper("#power_slider", {
   slidesPerView: 1,
   centeredSlides: true,
   spaceBetween: 40,
-
   breakpoints: {
     962: {
       slidesPerView: 2,
     },
-  }
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return `<div class="roadmap-pagination ${className}"></div>`;
+    },
+  },
 });
 
 const roadmapSwiper = new Swiper("#roadmap_slider", {
   slidesPerView: 1,
   centeredSlides: true,
   spaceBetween: 40,
-
+  mouseWheel: true,
+  direction: "horizontal",
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="cycloge.css" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <title>Cycloge</title>
@@ -16,7 +17,7 @@
         <nav class="navbar navbar-expand-lg bg-transparent border-header">
             <div class="container-fluid px-5 pt-2 navbar-container">
                 <div class="mobile_logo_section d-none">
-                    <img src="assets/logo_mobile.png" alt="" class="mobile_logo">
+                    <img src="assets/logo_mobile.png" alt="mobile_logo" class="mobile_logo">
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cyclogeNavbar"
                     aria-controls="cyclogeNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,27 +30,29 @@
                                 <a class="nav-link" href="cycloge.html">Home</a>
                             </li>
                             <li class="nav-item px-3">
-                                <a class="nav-link" aria-current="Why Cycloge" href="#why_cycloge">Why Cycloge ?</a>
+                                <a class="nav-link" aria-current="Why Cycloge" href="/cycloge.html#why_cycloge">Why
+                                    Cycloge ?</a>
                             </li>
                             <li class="nav-item px-3">
-                                <a class="nav-link" aria-current="Power" href="#powers">Power</a>
+                                <a class="nav-link" aria-current="Power" href="/cycloge.html#powers">Power</a>
                             </li>
                             <li class="nav-item px-3">
-                                <a class="nav-link" aria-current="Tokenomics" href="#tokenomics">Tokenomics</a>
+                                <a class="nav-link" aria-current="Tokenomics"
+                                    href="/cycloge.html#tokenomics">Tokenomics</a>
                             </li>
                         </div>
 
                         <li class="nav-item header-logo position-relative column text-center d-none d-lg-block">
-                            <img src="assets/header_logo.png" alt="" width="100" />
+                            <img src="assets/header_logo.png" alt="header_logo" width="100" />
                         </li>
 
                         <div class="right d-flex align-items-center column justify-content-end">
                             <li class="nav-item px-3">
-                                <a class="nav-link" aria-current="RoadMap" href="#road-map">RoadMap</a>
+                                <a class="nav-link" aria-current="RoadMap" href="/cycloge.html#road-map">RoadMap</a>
                             </li>
                             <li class="nav-item px-3">
                                 <a class="nav-link" aria-current="D-App" href="javascript:void(0)"><img
-                                        src="assets/Creator_Dapp/logo.png" alt="" width="100" /></a>
+                                        src="assets/Creator_Dapp/logo.png" alt="logo" width="100" /></a>
                             </li>
                         </div>
                     </ul>
@@ -57,35 +60,45 @@
             </div>
         </nav>
 
-        <div class="d-app-section container-fluid px-5">
+        <div class="d-app-section container-fluid p-0" id="d-app-section">
             <div class="main-images-section">
                 <div class="center-img-section position-relative">
                     <img src="assets/Creator_Dapp/Circle.png" alt="creator_img" class="img-fluid creator_circle_img">
-                    <img src="assets/Creator_Dapp/Dog_img.png" alt="Dog_img" data-aos-duration="1000"
-                         data-aos="zoom-in" class=" img-fluid center_dog_img">
-                    <img src="assets/Creator_Dapp/drawing_hand.png" data-aos-duration="1000" data-aos-delay="300"
+                    <img src="assets/Creator_Dapp/Dog_img.png" alt="Dog_img" data-aos-delay="300"
+                        data-aos-duration="1000" data-aos="zoom-in" class=" img-fluid center_dog_img">
+                    <img src="assets/Creator_Dapp/drawing_hand.png" data-aos-duration="1000" data-aos-delay="500"
                         data-aos="fade-left" alt="Hand_img" class="img-fluid drawing_hand_img">
                 </div>
                 <h1 class="mb-0 mt-3">Creator Dapp! Coming Soon...</h1>
             </div>
 
             <div class="bone_1 position-absolute">
-                <img src="assets/Creator_Dapp/Bone_1.png" class="img-fluid" alt="Bone_1">
+                <img src="assets/Creator_Dapp/Bone_1.png" class="img-fluid draggable_img" alt="Bone_1" id="Bone_1">
             </div>
             <div class="bone_2 position-absolute">
-                <img src="assets/Creator_Dapp/Bone_2.png" class="img-fluid" alt="Bone_2">
+                <img src="assets/Creator_Dapp/Bone_2.png" class="img-fluid draggable_img" alt="Bone_2" id="Bone_2">
             </div>
             <div class="bone_3 position-absolute">
-                <img src="assets/Creator_Dapp/Bone_3.png" class="img-fluid" alt="Bone_3">
+                <img src="assets/Creator_Dapp/Bone_3.png" class="img-fluid draggable_img" alt="Bone_3" id="Bone_3">
             </div>
         </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         AOS.init();
+
+        $(function () {
+            $(".draggable_img").draggable({
+                containment: "#d-app-section",
+                scroll: false,
+                cursor: "move",
+            });
+        });
     </script>
 </body>
 

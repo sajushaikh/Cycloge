@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg bg-transparent border-header">
       <div class="container-fluid px-5 pt-2 navbar-container">
         <div class="mobile_logo_section d-none">
-          <img src="assets/logo_mobile.png" alt="" class="mobile_logo">
+          <img src="assets/logo_mobile.png" alt="mobile_logo" class="mobile_logo">
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cyclogeNavbar"
           aria-controls="cyclogeNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,8 @@
           <ul class="navbar-nav w-100 justify-content-between align-items-center mb-2 mb-lg-0 mt-2 mt-lg-0">
             <div class="left d-flex align-items-center column">
               <li class="nav-item px-3">
-                <a class="nav-link" href="javascript:void(0)"><img src="assets/Home.png" alt="" width="50" /></a>
+                <a class="nav-link" href="javascript:void(0)"><img src="assets/Home.png" alt="home-image"
+                    width="50" /></a>
               </li>
               <li class="nav-item px-3">
                 <a class="nav-link" aria-current="Why Cycloge" href="#why_cycloge">Why Cycloge ?</a>
@@ -41,12 +42,16 @@
             </div>
 
             <li class="nav-item header-logo position-relative column text-center d-none d-lg-block">
-              <img src="assets/header_logo.png" alt="" width="100" />
+              <img src="assets/header_logo.png" alt="header_logo" width="100" />
             </li>
 
             <div class="right d-flex align-items-center column justify-content-end">
               <li class="nav-item px-3">
                 <a class="nav-link" aria-current="RoadMap" href="#road-map">RoadMap</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" aria-current="Whitepaper" href="https://cycloge.gitbook.io/cycloge-v1-whitepaper"
+                  target="_blank">Whitepaper</a>
               </li>
               <li class="nav-item px-3">
                 <a class="nav-link" aria-current="D-App" href="DApp.html">Creator Dapp</a>
@@ -66,7 +71,7 @@
           <div class="hover-effect">
             <img src="assets/Home/middle_king.png" class="img-fluid" alt="middle_king">
           </div>
-          <img src="assets/Home/cycloge.png" class="cycloge_circle" alt="cycloge" class="img-fluid">
+          <!-- <img src="assets/Home/cycloge_outer.png" class="cycloge_circle" alt="cycloge" class="img-fluid"> -->
         </div>
         <div class="right img-section hover-effect">
           <img src="assets/Home/right_king.png" class="img-fluid" alt="devil_king">
@@ -90,7 +95,7 @@
       <div class="bg-blur"></div>
       <div class="d-flex why_cycloge_container justify-content-center w-100 px-3 align-items-center">
         <div class="me-5 fade-right position-relative img-section" data-aos="fade-right">
-          <img src="assets/Why_Cycloge/zombie_cycloge.png" class="hover-effect why_cycloge_img" alt="">
+          <img src="assets/Why_Cycloge/zombie_cycloge.png" class="hover-effect why_cycloge_img" alt="zombie_cycloge">
           <div class="bat-1 bat"></div>
           <div class="bat-2 bat"></div>
           <div class="bat-3 bat"></div>
@@ -117,7 +122,7 @@
     <div class="text-center m-auto why_cycloge_text mt-5">
       <p class="font-medium ">
         Are you ready to begin a journey with us to fullfill the wishes of this one-eyed doge and make cyclogethe most
-        talked NFT collection in this history? Go and check out <a href="" class="text-gold">Cycloge Powers!</a>
+        talked NFT collection in this history? Go and check out <a href="#powers" class="text-gold">Cycloge Powers!</a>
       </p>
     </div>
     <div class="section-border"></div>
@@ -130,11 +135,12 @@
     </div>
 
     <div class="swiper" id="power_slider">
+      <div class="swiper-pagination"></div>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="power p-3">
             <div class="power-image me-4">
-              <img src="assets/Power/token_holder.png" alt="">
+              <img src="assets/Power/token_holder.png" alt="token_holder">
             </div>
             <div class="">
               <h3 class="mt-4">Reflection of token holder :</h3>
@@ -152,7 +158,7 @@
         <div class="swiper-slide">
           <div class="power p-3">
             <div class="power-image me-4">
-              <img src="assets/Power/construction_dapp.png" alt="">
+              <img src="assets/Power/construction_dapp.png" alt="construction_dapp">
             </div>
             <div class="">
               <h3 class="mt-4"> Construction DAPP :</h3>
@@ -174,7 +180,7 @@
         <div class="swiper-slide">
           <div class="power p-3">
             <div class="power-image me-4">
-              <img src="assets/Power/nft_holder.png" alt="">
+              <img src="assets/Power/nft_holder.png" alt="nft_holder">
             </div>
             <div class="">
               <h3 class="mt-4">Reflection of NFT holder :</h3>
@@ -194,7 +200,7 @@
     <div class="power_mobile container-fluid d-none" id="power_mobile">
       <div class="power p-3">
         <div class="power-image">
-          <img src="assets/Power/token_holder.png" alt="">
+          <img src="assets/Power/token_holder.png" alt="token_holder">
         </div>
         <div class="">
           <h3 class="mt-4">Reflection of token holder :</h3>
@@ -210,7 +216,7 @@
       </div>
       <div class="power p-3">
         <div class="power-image">
-          <img src="assets/Power/construction_dapp.png" alt="">
+          <img src="assets/Power/construction_dapp.png" alt="construction_dapp">
         </div>
         <div class="">
           <h3 class="mt-4"> Construction DAPP :</h3>
@@ -230,7 +236,7 @@
       </div>
       <div class="power p-3">
         <div class="power-image">
-          <img src="assets/Power/nft_holder.png" alt="">
+          <img src="assets/Power/nft_holder.png" alt="nft_holder">
         </div>
         <div class="">
           <h3 class="mt-4">Reflection of NFT holder :</h3>
@@ -276,7 +282,7 @@
             <h6 class="title">BUY/SELL TAX</h6>
             <div class="d-flex align-items-center">
               <h2 class="tokenomics_text mb-0 me-2" id="buy_sell"></h2>
-              <img src="assets/Tokenomics/chevron.down.png" width="20" alt="">
+              <img src="assets/Tokenomics/chevron.down.png" width="20" alt="chevron.down">
             </div>
           </div>
         </div>
@@ -287,7 +293,7 @@
       <div class="img-section text-center position-relative">
         <div class="inner">
           <img src="assets/Tokenomics/tokenomics.png" class="img-fluid w-50 graph-img" alt="Graph">
-          <img src="assets/Tokenomics/dog_pow.png" class="img-fluid position-absolute" alt="" id="dog_pow">
+          <img src="assets/Tokenomics/dog_pow.png" class="img-fluid position-absolute" alt="dog_pow" id="dog_pow">
         </div>
         <div class="graph-details">
           <div data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-out-cubic"
@@ -333,8 +339,7 @@
     <div class="section-border"></div>
   </section>
 
-  <div class="road-map overflow-hidden" id="road-map" data-aos="fade-up" data-aos-easing="linear"
-    data-aos-delay="200">
+  <div class="road-map overflow-hidden" id="road-map" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
     <div class="text-center pt-4">
       <h1 class="mb-5 text-center mt-5">Roadmap</h1>
     </div>
@@ -390,11 +395,11 @@
 
             <div class="roadmap-points">
               <ul>
-                <li>Website development</li>
-                <li>Customised NFT crafting</li>
-                <li>Contract creation</li>
-                <li>Pre-launch sale</li>
-                <li>PCS token launch</li>
+                <li>Launch of creators DApp</li>
+                <li>Weekly NFT listing from top Artist</li>
+                <li>Mass awareness drive</li>
+                <li>Dogecoin community and Elon Musk outreach</li>
+                <li>Extensive marketing until we dominate NFT space ruled by Apes</li>
               </ul>
             </div>
             <div class="roadmap-date">
@@ -408,21 +413,45 @@
 
   <div class="whitepaper overflow-hidden" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
     <div class="section-border mb-5"></div>
-
     <div class="text-center">
       <div class="d-flex align-items-start justify-content-center">
-        <h1 class="me-3 mb-0"><a href="javascript:void(0)">Whitepaper</a></h1>
-        <img src="assets/Whitepaper_Creators Dapp/link_arrow.png" class="mt-2" width="30" alt="">
+        <h2 class="me-3 mb-0"><a href="https://t.me/cycloge" target="_blank">Telegram Group</a></h2>
+        <img src="assets/Whitepaper_Creators Dapp/link_arrow.png" class="mt-2" width="25" alt="link_arrow">
       </div>
     </div>
-    <div class="section-border"></div>
 
+    <div class="section-border mb-5"></div>
+    <div class="text-center">
+      <div class="d-flex align-items-start justify-content-center">
+        <h2 class="me-3 mb-0"><a href="https://t.me/cyclogeAnn" target="_blank">Telegram Announcement</a></h2>
+        <img src="assets/Whitepaper_Creators Dapp/link_arrow.png" class="mt-2" width="25" alt="link_arrow">
+      </div>
+    </div>
+
+    <div class="section-border mb-5"></div>
+    <div class="text-center my-5">
+      <div class="d-flex align-items-start justify-content-center">
+        <h2 class="me-3 mb-0"><a href="https://twitter.com/thecycloge" target="_blank">Twitter</a>
+        </h2>
+        <img src="assets/Whitepaper_Creators Dapp/link_arrow.png" class="mt-2" width="25" alt="link_arrow">
+      </div>
+    </div>
+
+    <!-- <div class="section-border mb-5"></div>
+    <div class="text-center">
+      <div class="d-flex align-items-start justify-content-center">
+        <h1 class="me-3 mb-0"><a href="https://cycloge.gitbook.io/cycloge-v1-whitepaper" target="_blank">Whitepaper</a></h1>
+        <img src="assets/Whitepaper_Creators Dapp/link_arrow.png" class="mt-2" width="30" alt="link_arrow">
+      </div>
+    </div>
+
+    <div class="section-border"></div>
     <div class="text-center my-5">
       <div class="d-flex align-items-start justify-content-center">
         <h1 class="me-3 mb-0"><a href="DApp.html">Creators Dapp</a></h1>
-        <img src="assets/Whitepaper_Creators Dapp/link_arrow.png" class="mt-2" width="30" alt="">
+        <img src="assets/Whitepaper_Creators Dapp/link_arrow.png" class="mt-2" width="30" alt="link_arrow">
       </div>
-    </div>
+    </div> -->
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
